@@ -3,6 +3,12 @@ function distanceFromHqInBlocks(distance){
     return distance - 42;
   }
   else {
-    return 42 - distance; 
+    return 42 - distance;
   }
 }
+
+function distanceFromHqInFeet(street) {
+   distance = distanceFromHqInBlocks(street);
+   result = distance * 264;
+   return result;
+ }
